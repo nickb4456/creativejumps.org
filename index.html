@@ -235,6 +235,23 @@
             font-size: 0.85rem;
             font-weight: 500;
         }
+        .buy-btn {
+            display: inline-block;
+            margin-top: 0.7rem;
+            padding: 0.5rem 1.5rem;
+            background: var(--gold);
+            color: var(--navy);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.85rem;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            transition: all 0.3s;
+        }
+        .buy-btn:hover {
+            background: var(--white);
+            transform: translateY(-1px);
+        }
         .gallery-item.featured {
             grid-column: span 2;
             aspect-ratio: 16/9;
@@ -395,7 +412,8 @@
             <img src="images/hero-jesus.jpg" alt="Sacred Heart Jesus figurine — 3D printed" loading="lazy">
             <div class="overlay">
                 <h3>Sacred Heart of Jesus</h3>
-                <p>Religious Figurine Collection</p>
+                <p>Religious Figurine Collection — $27.00</p>
+                <a href="https://buy.stripe.com/test_7sY7sL3OnaRNbFg7yKfUQ00" class="buy-btn" target="_blank">Buy Now</a>
             </div>
         </div>
         <div class="gallery-item">
