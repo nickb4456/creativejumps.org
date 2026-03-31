@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Received | Creative Jumps RI</title>
+    <meta name="description" content="Your PawCast pet portrait order has been received. We'll be in touch within 24 hours.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --navy: #1B2A4A;
+            --gold: #C9A84C;
+            --cream: #FAF7F2;
+            --dark: #111111;
+            --text: #333333;
+            --light-text: #777777;
+            --white: #FFFFFF;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            color: var(--text);
+            background: var(--cream);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* NAV */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(27, 42, 74, 0.95);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        nav .logo {
+            font-family: 'Playfair Display', serif;
+            font-weight: 900;
+            font-size: 1.3rem;
+            color: var(--gold);
+            letter-spacing: 0.5px;
+            text-decoration: none;
+        }
+        nav .logo span { color: var(--white); font-weight: 400; }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        nav ul a {
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+        nav ul a:hover { color: var(--gold); }
+
+        /* MAIN CONTENT */
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 120px 2rem 4rem;
+        }
+        .thank-you-card {
+            max-width: 580px;
+            width: 100%;
+            text-align: center;
+            background: var(--white);
+            padding: 4rem 3rem;
+            border-top: 5px solid var(--gold);
+            box-shadow: 0 8px 40px rgba(27,42,74,0.08);
+        }
+        .checkmark {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+        .thank-you-card h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: var(--navy);
+            margin-bottom: 1rem;
+        }
+        .thank-you-card .subhead {
+            font-size: 1.05rem;
+            color: var(--light-text);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+        .email-callout {
+            background: rgba(201,168,76,0.08);
+            border: 1.5px solid var(--gold);
+            padding: 1.2rem 1.5rem;
+            margin: 1.5rem 0 2rem;
+            border-radius: 2px;
+            font-size: 0.95rem;
+            color: var(--text);
+        }
+        .email-callout a {
+            color: var(--navy);
+            font-weight: 600;
+        }
+        .back-btn {
+            display: inline-block;
+            padding: 0.9rem 2.5rem;
+            background: var(--navy);
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: all 0.3s;
+            border-radius: 2px;
+        }
+        .back-btn:hover {
+            background: var(--gold);
+            color: var(--navy);
+            transform: translateY(-2px);
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 2rem;
+            text-align: center;
+            background: var(--dark);
+            color: rgba(255,255,255,0.4);
+            font-size: 0.85rem;
+        }
+        footer .brand {
+            font-family: 'Playfair Display', serif;
+            color: var(--gold);
+            font-weight: 700;
+        }
+
+        @media (max-width: 768px) {
+            nav ul { display: none; }
+            .thank-you-card { padding: 3rem 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="index.html" class="logo">Creative Jumps <span>RI</span></a>
+    <ul>
+        <li><a href="index.html">&#8592; Back to Gallery</a></li>
+        <li><a href="pawcast.html">Pet Portraits</a></li>
+    </ul>
+</nav>
+
+<main>
+    <div class="thank-you-card">
+        <span class="checkmark">&#10003;</span>
+        <h1>Order Received!</h1>
+        <p class="subhead">Thank you for your PawCast order. We'll be in touch within 24 hours at the email you provided.</p>
+
+        <div class="email-callout">
+            Don't forget to email your pet's photo to <a href="mailto:creativejumpsri@gmail.com">creativejumpsri@gmail.com</a> with subject line <strong>"PawCast Photo &mdash; [Pet Name]"</strong>. We can't start printing without it!
+        </div>
+
+        <a href="pawcast.html" class="back-btn">Back to PawCast</a>
+    </div>
+</main>
+
+<footer>
+    <p><span class="brand">Creative Jumps RI</span> &mdash; Rory, Nick &amp; Cole</p>
+    <p style="margin-top: 0.5rem;">&copy; 2026 Creative Jumps RI. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
