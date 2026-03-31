@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Pet Portrait Figurine — Creative Jumps RI</title>
+    <meta name="description" content="Custom 3D-printed pet memorial figurine. Send us one photo of your dog or cat — we'll print a palm-sized sculpture. $35 + shipping.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --navy: #1B2A4A; --gold: #C9A84C; --cream: #FAF7F2;
+            --dark: #111111; --text: #333333; --light-text: #777777; --white: #FFFFFF;
+        }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', -apple-system, sans-serif; color: var(--text); background: var(--cream); line-height: 1.6; }
+
+        nav {
+            position: fixed; top: 0; width: 100%; z-index: 100; padding: 1rem 2rem;
+            display: flex; justify-content: space-between; align-items: center;
+            background: rgba(27, 42, 74, 0.95); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+        }
+        nav .logo { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 1.3rem; color: var(--gold); letter-spacing: 0.5px; text-decoration: none; }
+        nav .logo span { color: var(--white); font-weight: 400; }
+        nav .back { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.9rem; font-weight: 500; letter-spacing: 0.5px; text-transform: uppercase; transition: color 0.3s; }
+        nav .back:hover { color: var(--gold); }
+
+        .product-page {
+            max-width: 1100px; margin: 0 auto; padding: 6rem 2rem 4rem;
+            display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;
+        }
+
+        .product-images {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+        }
+        .product-images img {
+            width: 100%;
+            border-radius: 4px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            object-fit: cover;
+            aspect-ratio: 3/4;
+        }
+        .product-images img:first-child {
+            grid-column: span 2;
+            aspect-ratio: 4/3;
+        }
+
+        .product-info { padding-top: 1rem; }
+        .product-info .category {
+            font-size: 0.8rem; letter-spacing: 3px; text-transform: uppercase;
+            color: var(--gold); font-weight: 600; margin-bottom: 0.5rem;
+        }
+        .product-info h1 {
+            font-family: 'Playfair Display', serif; font-size: 2.2rem;
+            color: var(--navy); margin-bottom: 1rem; line-height: 1.2;
+        }
+        .product-info .price {
+            font-size: 1.8rem; font-weight: 700; color: var(--navy); margin-bottom: 0.3rem;
+        }
+        .product-info .shipping { font-size: 0.9rem; color: var(--light-text); margin-bottom: 1.5rem; }
+        .product-info .description { font-size: 1.05rem; color: var(--text); line-height: 1.8; margin-bottom: 2rem; }
+        .product-info .details { margin-bottom: 2rem; }
+        .product-info .details li {
+            list-style: none; padding: 0.5rem 0; border-bottom: 1px solid #e8e5e0;
+            font-size: 0.95rem; color: var(--text);
+        }
+        .product-info .details li strong { color: var(--navy); }
+
+        .buy-btn {
+            display: inline-block; padding: 1rem 3rem; background: var(--gold); color: var(--navy);
+            text-decoration: none; font-weight: 600; font-size: 1rem; letter-spacing: 1px;
+            text-transform: uppercase; transition: all 0.3s; border: none; cursor: pointer; width: 100%; text-align: center;
+        }
+        .buy-btn:hover { background: var(--navy); color: var(--white); transform: translateY(-2px); box-shadow: 0 4px 20px rgba(27,42,74,0.3); }
+
+        .photo-note {
+            margin-top: 1.2rem;
+            padding: 1rem 1.2rem;
+            border: 1.5px solid var(--gold);
+            background: rgba(201,168,76,0.05);
+            border-radius: 2px;
+            font-size: 0.88rem;
+            color: var(--text);
+            line-height: 1.6;
+        }
+        .photo-note strong { color: var(--navy); }
+
+        .back-link { display: inline-block; margin-top: 1.5rem; color: var(--light-text); text-decoration: none; font-size: 0.9rem; }
+        .back-link:hover { color: var(--gold); }
+
+        footer { padding: 2rem; text-align: center; background: var(--dark); color: rgba(255,255,255,0.4); font-size: 0.85rem; }
+        footer .brand { font-family: 'Playfair Display', serif; color: var(--gold); font-weight: 700; }
+
+        @media (max-width: 768px) {
+            .product-page { grid-template-columns: 1fr; padding-top: 5rem; }
+            .product-images { grid-template-columns: 1fr 1fr; }
+            .product-images img:first-child { grid-column: span 2; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="/" class="logo">Creative Jumps <span>RI</span></a>
+    <a href="/#gallery" class="back">Back to Gallery</a>
+</nav>
+
+<div class="product-page">
+    <div class="product-images">
+        <img src="../images/abbey-side.jpg" alt="Custom 3D-printed dog memorial figurine — side profile">
+        <img src="../images/abbey-front.jpg" alt="Custom 3D-printed dog memorial figurine — front view">
+    </div>
+    <div class="product-info">
+        <p class="category">PawCast — Pet Memorial Collection</p>
+        <h1>Custom Pet Portrait Figurine</h1>
+        <div class="price">$35.00</div>
+        <div class="shipping">+ shipping (US only)</div>
+        <p class="description">
+            Send us one photo of your pet and we'll create a palm-sized 3D sculpture —
+            every detail faithfully captured in clean white PLA. Dogs, cats, any breed.
+            Printed on our Bambu Lab A1 and hand-inspected before it ships. A keepsake
+            built to last a lifetime.
+        </p>
+        <ul class="details">
+            <li><strong>Material:</strong> Premium PLA (white)</li>
+            <li><strong>Size:</strong> ~3 inches tall (custom sizing available)</li>
+            <li><strong>Printer:</strong> Bambu Lab A1</li>
+            <li><strong>Finish:</strong> Hand-cleaned, inspected</li>
+            <li><strong>Ships from:</strong> Rhode Island, USA</li>
+            <li><strong>Turnaround:</strong> 3–5 business days after photo received</li>
+            <li><strong>Breeds:</strong> Dogs &amp; cats — any breed</li>
+        </ul>
+        <a href="https://pawcast.creativejumps.org/order" class="buy-btn">Order Now — $35.00</a>
+        <div class="photo-note">
+            <strong>How it works:</strong> After ordering, email your pet's photo to
+            <a href="mailto:creativejumpsri@gmail.com" style="color:var(--navy);font-weight:600;">creativejumpsri@gmail.com</a>
+            with subject <strong>"PawCast Photo — [Pet Name]"</strong>.
+            Clear, well-lit, front-facing shots work best.
+        </div>
+        <br>
+        <a href="pawcast.html" class="back-link" style="margin-top:0;">See the full PawCast page &rarr;</a>
+        <br>
+        <a href="/#gallery" class="back-link">View all products</a>
+    </div>
+</div>
+
+<footer>
+    <p><span class="brand">Creative Jumps RI</span> &mdash; Rory, Nick &amp; Cole</p>
+    <p style="margin-top: 0.5rem;">&copy; 2026 Creative Jumps RI. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
