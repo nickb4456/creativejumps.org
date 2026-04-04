@@ -22836,7 +22836,7 @@ function SM() {
                               className: `w-20 h-20 rounded-xl overflow-hidden border-2 transition-all ${f === r ? "border-primary" : "border-transparent opacity-60 hover:opacity-100"}`,
                               children: E.jsx("img", {
                                 src: c,
-                                alt: "",
+                                alt: `${i.name} — view ${f + 1}`,
                                 className: "w-full h-full object-cover",
                               }),
                             },
